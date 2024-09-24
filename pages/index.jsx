@@ -7,6 +7,7 @@ export default function Home() {
       <Heading>Home</Heading>
       <Image
         src="/dev_ggamja.jpg"
+        alt="ggamja"
         width="1000"
         height="1000"
       />
