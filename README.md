@@ -1,5 +1,5 @@
 # Homepage
-[www.htproject.shop](www.htproject.shop)
+[htproject.shop](https://www.htproject.shop)
 ## Stack
 
 - [Next.js](https://nextjs.org/)
