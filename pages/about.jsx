@@ -72,6 +72,10 @@ const About = () => (
         부산대학교 기계공학부
       </BioSection>
       <BioSection>
+        <BioYear>2023</BioYear>
+        SW 사관학교 정글
+      </BioSection>
+      <BioSection>
         <BioYear>2024 - 현재</BioYear>
         대륜 개발팀
       </BioSection>
