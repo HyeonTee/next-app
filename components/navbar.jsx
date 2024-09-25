@@ -116,7 +116,7 @@ const Navbar = props => {
                   as={Link}
                   href="https://github.com/HyeonTee/next-app"
                 >
-                  View Source
+                  Source
                 </MenuItem>
               </MenuList>
             </Menu>
