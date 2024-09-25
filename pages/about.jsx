@@ -68,15 +68,19 @@ const About = () => (
         Bio
       </Heading>
       <BioSection>
-        <BioYear>2017 - 2023</BioYear>
+        <BioYear>2017.03 - 2023.02</BioYear>
         부산대학교 기계공학부
       </BioSection>
       <BioSection>
-        <BioYear>2023</BioYear>
+        <BioYear>2023.02 - 2023.07</BioYear>
         SW 사관학교 정글
       </BioSection>
       <BioSection>
-        <BioYear>2024 - 현재</BioYear>
+        <BioYear>2024.03 - 2023.08</BioYear>
+        Elice Cloud Track
+      </BioSection>
+      <BioSection>
+        <BioYear>2024.09 - now</BioYear>
         대륜 개발팀
       </BioSection>
     </Section>
