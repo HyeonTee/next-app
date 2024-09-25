@@ -2,7 +2,7 @@ import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 
 export default function Home() {
-  const greeting = ' 안녕하세요, 백엔드 개발자 김현태입니다.'
+  const greeting = '  안녕하세요, 백엔드 개발자 김현태입니다. '
   const [displayedGreeting, setDisplayedGreeting] = useState('')
 
   useEffect(() => {

@@ -10,6 +10,9 @@ import { RiNextjsFill } from "react-icons/ri";
 const About = () => (
   <Container>
     <Section delay={0.2}>
+      <Heading as="h2" variant="page-title">
+        김현태
+      </Heading>
       <Heading as="h3" variant="section-title">
         Skills
       </Heading>
