@@ -1,11 +1,18 @@
-import { Container, Heading, List, ListItem, Flex, Text } from '@chakra-ui/react';
-import Section from '../components/section';
-import { BioSection, BioYear } from '../components/bio';
-import { MdOutlineEmail } from "react-icons/md";
-import { FaJava, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
-import { FaGitAlt, FaDocker } from "react-icons/fa6";
-import { SiSpring, SiPostgresql, SiMysql, SiMongodb } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+import {
+  Container,
+  Heading,
+  List,
+  ListItem,
+  Flex,
+  Text,
+} from '@chakra-ui/react'
+import Section from '../components/section'
+import { BioSection, BioYear } from '../components/bio'
+import { MdOutlineEmail } from 'react-icons/md'
+import { FaJava, FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
+import { FaGitAlt, FaDocker } from 'react-icons/fa6'
+import { SiSpring, SiPostgresql, SiMysql, SiMongodb } from 'react-icons/si'
+import { RiNextjsFill } from 'react-icons/ri'
 
 const About = () => (
   <Container>
@@ -76,7 +83,7 @@ const About = () => (
         SW 사관학교 정글
       </BioSection>
       <BioSection>
-        <BioYear>2024.03 - 2023.08</BioYear>
+        <BioYear>2024.03 - 2024.08</BioYear>
         Elice Cloud Track
       </BioSection>
       <BioSection>
@@ -96,6 +103,6 @@ const About = () => (
       </List>
     </Section>
   </Container>
-);
+)
 
-export default About;
+export default About
