@@ -11,8 +11,9 @@ import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FaJava, FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
-import { SiSpring, SiPostgresql, SiMysql, SiMongodb } from 'react-icons/si'
+import { SiSpring, SiPostgresql, SiMysql, SiMongodb, SiTypescript } from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
+import Paragraph from '../components/paragraph'
 
 const About = () => (
   <Container>
@@ -20,6 +21,12 @@ const About = () => (
       <Heading as="h2" variant="page-title">
         김현태
       </Heading>
+      <Heading as="h3" variant="section-title">
+        Introduction
+      </Heading>
+      <Paragraph>
+        부산대학교 기계공학부를 졸업한 후, 프로그래밍에 흥미가 생겨 컴퓨터 공학과 웹을 공부해 개발자로 일하고 있습니다.
+      </Paragraph>
       <Heading as="h3" variant="section-title">
         Skills
       </Heading>
@@ -31,6 +38,10 @@ const About = () => (
         <Flex direction="column" align="center" m={4}>
           <FaJava size="40px" />
           <Text mt={2}>Java</Text>
+        </Flex>
+        <Flex direction="column" align="center" m={4}>
+          <SiTypescript size="40px" />
+          <Text mt={2}>TypeScript</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
           <FaNodeJs size="40px" />
@@ -84,7 +95,7 @@ const About = () => (
       </BioSection>
       <BioSection>
         <BioYear>2024.03 - 2024.08</BioYear>
-        Elice Cloud Track
+        엘리스 클라우드트랙
       </BioSection>
       <BioSection>
         <BioYear>2024.09 - now</BioYear>
