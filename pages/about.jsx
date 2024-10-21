@@ -11,7 +11,13 @@ import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FaJava, FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
-import { SiSpring, SiPostgresql, SiMysql, SiMongodb, SiTypescript } from 'react-icons/si'
+import {
+  SiSpring,
+  SiPostgresql,
+  SiMysql,
+  SiMongodb,
+  SiTypescript,
+} from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
 import Paragraph from '../components/paragraph'
 
@@ -25,7 +31,8 @@ const About = () => (
         Introduction
       </Heading>
       <Paragraph>
-        부산대학교 기계공학부를 졸업한 후, 프로그래밍에 흥미가 생겨 컴퓨터 공학과 웹을 공부해 개발자로 일하고 있습니다.
+        부산대학교 기계공학부를 졸업한 후, 프로그래밍에 흥미가 생겨 컴퓨터
+        공학과 웹을 공부해 개발자로 일하고 있습니다.
       </Paragraph>
       <Heading as="h3" variant="section-title">
         Skills
@@ -98,7 +105,7 @@ const About = () => (
         엘리스 클라우드트랙
       </BioSection>
       <BioSection>
-        <BioYear>2024.09 - now</BioYear>
+        <BioYear>2024.08 - now</BioYear>
         대륜 개발팀
       </BioSection>
     </Section>
