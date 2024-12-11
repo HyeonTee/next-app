@@ -39,14 +39,6 @@ const About = () => (
       </Heading>
       <Flex wrap="wrap" justify="space-around" align="center">
         <Flex direction="column" align="center" m={4}>
-          <SiSpring size="40px" />
-          <Text mt={2}>Spring</Text>
-        </Flex>
-        <Flex direction="column" align="center" m={4}>
-          <FaJava size="40px" />
-          <Text mt={2}>Java</Text>
-        </Flex>
-        <Flex direction="column" align="center" m={4}>
           <SiTypescript size="40px" />
           <Text mt={2}>TypeScript</Text>
         </Flex>
