@@ -9,10 +9,9 @@ import {
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
-import { FaJava, FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
+import { FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
 import {
-  SiSpring,
   SiPostgresql,
   SiMysql,
   SiMongodb,
