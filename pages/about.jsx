@@ -11,12 +11,7 @@ import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
-import {
-  SiPostgresql,
-  SiMysql,
-  SiMongodb,
-  SiTypescript,
-} from 'react-icons/si'
+import { SiPostgresql, SiMysql, SiMongodb, SiTypescript } from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
 import Paragraph from '../components/paragraph'
 
@@ -31,7 +26,7 @@ const About = () => (
       </Heading>
       <Paragraph>
         부산대학교 기계공학부를 졸업한 후, 프로그래밍에 흥미가 생겨 컴퓨터
-        공학과 웹을 공부해 개발자로 일하고 있습니다.
+        공학과 웹을 공부하며 개발자로 일하고 있습니다.
       </Paragraph>
       <Heading as="h3" variant="section-title">
         Skills
