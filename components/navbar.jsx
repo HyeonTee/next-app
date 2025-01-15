@@ -82,6 +82,17 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
+            href="http://3.34.130.108"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            Board
+          </LinkItem>
+          <LinkItem
+            target="_blank"
             href="https://github.com/HyeonTee/next-app"
             path={path}
             display="inline-flex"
