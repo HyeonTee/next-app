@@ -123,12 +123,12 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/about">
                   About me
                 </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="http://3.34.130.108"
-                >
-                  Board
-                </MenuItem>
+                {/*<MenuItem*/}
+                {/*  as={Link}*/}
+                {/*  href="http://3.34.130.108"*/}
+                {/*>*/}
+                {/*  Board*/}
+                {/*</MenuItem>*/}
                 <MenuItem
                   as={Link}
                   href="https://github.com/HyeonTee/next-app"
