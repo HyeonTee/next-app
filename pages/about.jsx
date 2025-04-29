@@ -41,10 +41,6 @@ const About = () => (
           <Text mt={2}>Node.js</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
-          <RiNextjsFill size="40px" />
-          <Text mt={2}>Next.js</Text>
-        </Flex>
-        <Flex direction="column" align="center" m={4}>
           <SiPostgresql size="40px" />
           <Text mt={2}>PostgreSQL</Text>
         </Flex>
@@ -67,10 +63,6 @@ const About = () => (
         <Flex direction="column" align="center" m={4}>
           <FaGitAlt size="40px" />
           <Text mt={2}>Git</Text>
-        </Flex>
-        <Flex direction="column" align="center" m={4}>
-          <FaDocker size="40px" />
-          <Text mt={2}>Docker</Text>
         </Flex>
       </Flex>
     </Section>
