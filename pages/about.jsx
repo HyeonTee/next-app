@@ -11,7 +11,7 @@ import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
-import { SiPostgresql, SiMysql, SiMongodb, SiTypescript } from 'react-icons/si'
+import { SiPostgresql, SiMysql, SiMongodb, SiTypescript, SiRust } from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
 import Paragraph from '../components/paragraph'
 
@@ -41,6 +41,10 @@ const About = () => (
           <Text mt={2}>Node.js</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
+          <RiNextjsFill size="40px" />
+          <Text mt={2}>Next.js</Text>
+        </Flex>
+        <Flex direction="column" align="center" m={4}>
           <SiPostgresql size="40px" />
           <Text mt={2}>PostgreSQL</Text>
         </Flex>
@@ -57,12 +61,20 @@ const About = () => (
           <Text mt={2}>Python</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
+          <SiRust size="40px" />
+          <Text mt={2}>Rust</Text>
+        </Flex>
+        <Flex direction="column" align="center" m={4}>
           <FaAws size="40px" />
           <Text mt={2}>AWS</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
           <FaGitAlt size="40px" />
           <Text mt={2}>Git</Text>
+        </Flex>
+        <Flex direction="column" align="center" m={4}>
+          <FaDocker size="40px" />
+          <Text mt={2}>Docker</Text>
         </Flex>
       </Flex>
     </Section>
