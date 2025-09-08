@@ -11,7 +11,7 @@ import { BioSection, BioYear } from '../components/bio'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FaNodeJs, FaPython, FaAws } from 'react-icons/fa'
 import { FaGitAlt, FaDocker } from 'react-icons/fa6'
-import { SiPostgresql, SiMysql, SiMongodb, SiTypescript, SiRust } from 'react-icons/si'
+import { SiPostgresql, SiMysql, SiMongodb, SiTypescript } from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
 import Paragraph from '../components/paragraph'
 
@@ -59,10 +59,6 @@ const About = () => (
         <Flex direction="column" align="center" m={4}>
           <FaPython size="40px" />
           <Text mt={2}>Python</Text>
-        </Flex>
-        <Flex direction="column" align="center" m={4}>
-          <SiRust size="40px" />
-          <Text mt={2}>Rust</Text>
         </Flex>
         <Flex direction="column" align="center" m={4}>
           <FaAws size="40px" />
