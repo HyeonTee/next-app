@@ -22,6 +22,7 @@ import {
   SiTrpc,
   SiRust,
   SiC,
+  SiVercel,
 } from 'react-icons/si'
 import { RiNextjsFill } from 'react-icons/ri'
 import Paragraph from '../components/paragraph'
@@ -87,6 +88,7 @@ const About = () => {
           Skills
         </Heading>
 
+        {/* Languages */}
         <Heading as="h4" size="md" mt={4} mb={2}>
           Languages
         </Heading>
@@ -99,6 +101,7 @@ const About = () => {
           <SkillCard icon={<SiRust size="40px" />} label="Rust" brandColor="#DEA584" />
         </Flex>
 
+        {/* Databases */}
         <Heading as="h4" size="md" mt={6} mb={2}>
           Databases
         </Heading>
@@ -108,6 +111,7 @@ const About = () => {
           <SkillCard icon={<SiMongodb size="40px" />} label="MongoDB" brandColor="#47A248" />
         </Flex>
 
+        {/* Frameworks & Tools */}
         <Heading as="h4" size="md" mt={6} mb={2}>
           Frameworks & Tools
         </Heading>
@@ -118,6 +122,7 @@ const About = () => {
           <SkillCard icon={<FaAws size="40px" />} label="AWS" brandColor="#FF9900" />
           <SkillCard icon={<FaGitAlt size="40px" />} label="Git" brandColor="#F05032" />
           <SkillCard icon={<FaDocker size="40px" />} label="Docker" brandColor="#2496ED" />
+          <SkillCard icon={<SiVercel size="40px" />} label="Vercel" brandColor={nextColor} />
         </Flex>
       </Section>
 
