@@ -69,6 +69,11 @@ SkillCard.propTypes = {
 const About = () => {
   const nextColor = useColorModeValue('#111111', '#E2E8F0')
 
+  const now = new Date()
+  const currentYear = now.getFullYear()
+  const currentMonth = String(now.getMonth() + 1).padStart(2, '0')
+  const formattedDate = `${currentYear}.${currentMonth}`
+
   return (
     <Container>
       <Section delay={0.2}>
@@ -143,8 +148,8 @@ const About = () => {
           엘리스 클라우드트랙
         </BioSection>
         <BioSection>
-          <BioYear>2024.08 - now</BioYear>
-          대륜 개발팀
+          <BioYear>2024.08 - {formattedDate}</BioYear>
+          대륜 개발팀 (재직 중)
         </BioSection>
       </Section>
 
