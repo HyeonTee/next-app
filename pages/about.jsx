@@ -10,23 +10,26 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
+import Paragraph from '../components/paragraph'
+import PropTypes from 'prop-types'
+
 import { MdOutlineEmail } from 'react-icons/md'
-import { FaNodeJs, FaPython, FaAws, FaJava } from 'react-icons/fa'
-import { FaGitAlt, FaDocker } from 'react-icons/fa6'
+import { FaNodeJs, FaAws, FaJava, FaGitAlt } from 'react-icons/fa'
+import { FaDocker } from 'react-icons/fa6'
+import { RiNextjsFill } from 'react-icons/ri'
 import {
+  SiGo,
   SiPostgresql,
   SiMysql,
   SiMongodb,
-  SiTypescript,
   SiSpring,
   SiTrpc,
   SiRust,
-  SiC,
   SiVercel,
+  SiGin,
+  SiGrafana,
 } from 'react-icons/si'
-import { RiNextjsFill } from 'react-icons/ri'
-import Paragraph from '../components/paragraph'
-import PropTypes from 'prop-types'
+import { DiRedis } from 'react-icons/di'
 
 const SkillCard = ({ icon, label, brandColor }) => {
   const cardBg = useColorModeValue('white', 'whiteAlpha.100')
@@ -47,7 +50,11 @@ const SkillCard = ({ icon, label, brandColor }) => {
       borderColor={borderColor}
       boxShadow="sm"
       transition="transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease"
-      _hover={{ transform: 'translateY(-3px)', boxShadow: 'md', bg: cardHoverBg }}
+      _hover={{
+        transform: 'translateY(-3px)',
+        boxShadow: 'md',
+        bg: cardHoverBg,
+      }}
       minW="110px"
     >
       <Box color={brandColor} lineHeight={0}>
@@ -98,12 +105,26 @@ const About = () => {
           Languages
         </Heading>
         <Flex wrap="wrap" justify="center" align="center">
-          <SkillCard icon={<SiTypescript size="40px" />} label="TypeScript" brandColor="#3178c6" />
-          <SkillCard icon={<FaNodeJs size="40px" />} label="Node.js" brandColor="#339933" />
-          <SkillCard icon={<FaPython size="40px" />} label="Python" brandColor="#3776AB" />
-          <SkillCard icon={<FaJava size="40px" />} label="Java" brandColor="#E11F21" />
-          <SkillCard icon={<SiC size="40px" />} label="C" brandColor="#A8B9CC" />
-          <SkillCard icon={<SiRust size="40px" />} label="Rust" brandColor="#DEA584" />
+          <SkillCard
+            icon={<SiGo size="40px" />}
+            label="Go"
+            brandColor="#00ADD8"
+          />
+          <SkillCard
+            icon={<FaNodeJs size="40px" />}
+            label="Node.js"
+            brandColor="#339933"
+          />
+          <SkillCard
+            icon={<SiRust size="40px" />}
+            label="Rust"
+            brandColor="#DEA584"
+          />
+          <SkillCard
+            icon={<FaJava size="40px" />}
+            label="Java"
+            brandColor="#E11F21"
+          />
         </Flex>
 
         {/* Databases */}
@@ -111,23 +132,85 @@ const About = () => {
           Databases
         </Heading>
         <Flex wrap="wrap" justify="center" align="center">
-          <SkillCard icon={<SiPostgresql size="40px" />} label="PostgreSQL" brandColor="#336791" />
-          <SkillCard icon={<SiMysql size="40px" />} label="MySQL" brandColor="#4479A1" />
-          <SkillCard icon={<SiMongodb size="40px" />} label="MongoDB" brandColor="#47A248" />
+          <SkillCard
+            icon={<SiPostgresql size="40px" />}
+            label="PostgreSQL"
+            brandColor="#336791"
+          />
+          <SkillCard
+            icon={<SiMongodb size="40px" />}
+            label="MongoDB"
+            brandColor="#47A248"
+          />
+          <SkillCard
+            icon={<DiRedis size="40px" />}
+            label="Redis"
+            brandColor="#DC382D"
+          />
+          <SkillCard
+            icon={<SiMysql size="40px" />}
+            label="MySQL"
+            brandColor="#4479A1"
+          />
         </Flex>
 
-        {/* Frameworks & Tools */}
+        {/* Frameworks */}
         <Heading as="h4" size="md" mt={6} mb={2}>
-          Frameworks & Tools
+          Frameworks
         </Heading>
         <Flex wrap="wrap" justify="center" align="center">
-          <SkillCard icon={<RiNextjsFill size="40px" />} label="Next.js" brandColor={nextColor} />
-          <SkillCard icon={<SiSpring size="40px" />} label="Spring" brandColor="#6DB33F" />
-          <SkillCard icon={<SiTrpc size="40px" />} label="tRPC" brandColor="#2596be" />
-          <SkillCard icon={<FaAws size="40px" />} label="AWS" brandColor="#FF9900" />
-          <SkillCard icon={<FaGitAlt size="40px" />} label="Git" brandColor="#F05032" />
-          <SkillCard icon={<FaDocker size="40px" />} label="Docker" brandColor="#2496ED" />
-          <SkillCard icon={<SiVercel size="40px" />} label="Vercel" brandColor={nextColor} />
+          <SkillCard
+            icon={<SiGin size="40px" />}
+            label="Gin"
+            brandColor="#00ADD8"
+          />
+          <SkillCard
+            icon={<RiNextjsFill size="40px" />}
+            label="Next.js"
+            brandColor={nextColor}
+          />
+          <SkillCard
+            icon={<SiTrpc size="40px" />}
+            label="tRPC"
+            brandColor="#2596be"
+          />
+          <SkillCard
+            icon={<SiSpring size="40px" />}
+            label="Spring"
+            brandColor="#6DB33F"
+          />
+        </Flex>
+
+        {/* DevOps */}
+        <Heading as="h4" size="md" mt={6} mb={2}>
+          DevOps
+        </Heading>
+        <Flex wrap="wrap" justify="center" align="center">
+          <SkillCard
+            icon={<FaAws size="40px" />}
+            label="AWS"
+            brandColor="#FF9900"
+          />
+          <SkillCard
+            icon={<FaGitAlt size="40px" />}
+            label="Git"
+            brandColor="#F05032"
+          />
+          <SkillCard
+            icon={<FaDocker size="40px" />}
+            label="Docker"
+            brandColor="#2496ED"
+          />
+          <SkillCard
+            icon={<SiGrafana size="40px" />}
+            label="Grafana"
+            brandColor="#F46800"
+          />
+          {/* <SkillCard
+            icon={<SiVercel size="40px" />}
+            label="Vercel"
+            brandColor={nextColor}
+          />*/}
         </Flex>
       </Section>
 
