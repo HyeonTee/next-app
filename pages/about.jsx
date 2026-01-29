@@ -25,7 +25,6 @@ import {
   SiSpring,
   SiTrpc,
   SiRust,
-  SiVercel,
   SiGin,
   SiGrafana,
 } from 'react-icons/si'
