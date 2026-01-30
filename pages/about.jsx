@@ -14,8 +14,14 @@ import Paragraph from '../components/paragraph'
 import PropTypes from 'prop-types'
 
 import { MdOutlineEmail } from 'react-icons/md'
-import { FaNodeJs, FaAws, FaJava, FaGitAlt } from 'react-icons/fa'
-import { FaDocker } from 'react-icons/fa6'
+import {
+  FaNodeJs,
+  FaAws,
+  FaJava,
+  FaGitAlt,
+  FaDocker,
+  FaLinux,
+} from 'react-icons/fa'
 import { RiNextjsFill } from 'react-icons/ri'
 import {
   SiGo,
@@ -27,7 +33,10 @@ import {
   SiRust,
   SiGin,
   SiGrafana,
+  SiJenkins,
+  SiVercel,
 } from 'react-icons/si'
+
 import { DiRedis } from 'react-icons/di'
 
 const SkillCard = ({ icon, label, brandColor }) => {
@@ -180,9 +189,9 @@ const About = () => {
           />
         </Flex>
 
-        {/* DevOps */}
+        {/* Infrastructure & Operations */}
         <Heading as="h4" size="md" mt={6} mb={2}>
-          DevOps
+          Infrastructure & Operations
         </Heading>
         <Flex wrap="wrap" justify="center" align="center">
           <SkillCard
@@ -196,20 +205,30 @@ const About = () => {
             brandColor="#F05032"
           />
           <SkillCard
+            icon={<FaLinux size="40px" />}
+            label="Linux"
+            brandColor={nextColor}
+          />
+          <SkillCard
             icon={<FaDocker size="40px" />}
             label="Docker"
             brandColor="#2496ED"
+          />
+          <SkillCard
+            icon={<SiJenkins size="40px" />}
+            label="Jenkins"
+            brandColor="#D24939"
+          />
+          <SkillCard
+            icon={<SiVercel size="40px" />}
+            label="Vercel"
+            brandColor={nextColor}
           />
           <SkillCard
             icon={<SiGrafana size="40px" />}
             label="Grafana"
             brandColor="#F46800"
           />
-          {/* <SkillCard
-            icon={<SiVercel size="40px" />}
-            label="Vercel"
-            brandColor={nextColor}
-          />*/}
         </Flex>
       </Section>
 
